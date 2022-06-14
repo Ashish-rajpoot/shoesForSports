@@ -26,7 +26,7 @@ public class SwaggerConfig {
 						"api for Buy Sports Shoes",
 						"1.0.0",
 						"Always buy the good product for sports",
-						new Contact("SM", "https://www.linkedin.com/company/simplilearn", "simplilearn@gmail.com"),
+						new Contact("ME", "https://www.linkedin.com/company/simplilearn", "simplilearn@gmail.com"),
 						"Standard API License",  "www.simplilearn.com",Collections.emptyList()));
 	}	
 }
