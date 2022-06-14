@@ -35,6 +35,12 @@ public class PurchaseReport {
 	
 	
 
+	public PurchaseReport() {
+		super();
+	}
+
+
+
 	public int getId() {
 		return id;
 	}

@@ -36,6 +36,12 @@ public class Shoe {
 
 
 
+	public Shoe() {
+		super();
+	}
+
+
+
 	@Id
 	@GeneratedValue
 	private int id;

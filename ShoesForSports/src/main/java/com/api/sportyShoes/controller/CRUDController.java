@@ -26,12 +26,7 @@ public class CRUDController {
 
 	private MultiValueMap<String, String> errorMap;
 
-	/**
-	 * Shoe post request controller
-	 * 
-	 * @param shoe
-	 * @return ResponseEntity<Shoe> with newly created Shoe
-	 */
+	
 	@PostMapping("/admin/shoe")
 	public ResponseEntity<Shoe> createShoe(@RequestBody Shoe shoe) {
 		try {
@@ -43,12 +38,7 @@ public class CRUDController {
 		}
 	}
 
-	/**
-	 * Shoe get request controller
-	 * 
-	 * @param id
-	 * @return ResponseEntity<Shoe> with the given id
-	 */
+	
 	@GetMapping("/admin/shoe/{id}")
 	public ResponseEntity<Shoe> getShoeById(@PathVariable int id) {
 		try {
@@ -60,23 +50,14 @@ public class CRUDController {
 		}
 	}
 
-	/**
-	 * Shoe put(update) request controller
-	 * 
-	 * @param shoe
-	 * @return ResponseEntity<Shoe> with updated shoe
-	 */
+
+
 	@PutMapping("/admin/shoe")
 	public ResponseEntity<Shoe> updateShoe(@RequestBody Shoe shoe) {
 		return new ResponseEntity<>(service.updateShoe(shoe), HttpStatus.OK);
 	}
 
-	/**
-	 * Shoe delete request controller
-	 * 
-	 * @param id
-	 * @return ResponseEntity<String> containing the status of delete operation
-	 */
+	
 	@DeleteMapping("/admin/shoe/{id}")
 	public ResponseEntity<String> deleteShoeById(@PathVariable int id) {
 		try {
@@ -89,12 +70,7 @@ public class CRUDController {
 		}
 	}
 
-	/**
-	 * Purchase Report post request controller
-	 * 
-	 * @param pr - Purchase Report
-	 * @return ResponseEntity<PurchaseReport> with newly created Purchase Report
-	 */
+	
 	@PostMapping("/admin/purchaseReport")
 	public ResponseEntity<PurchaseReport> createPurchaseReport(@RequestBody PurchaseReport pr) {
 		try {
@@ -106,12 +82,7 @@ public class CRUDController {
 		}
 	}
 
-	/**
-	 * Purchase Report get request controller
-	 * 
-	 * @param id
-	 * @return ResponseEntity<PurchaseReport> with given id
-	 */
+	
 	@GetMapping("/admin/purchaseReport/id/{id}")
 	public ResponseEntity<PurchaseReport> getPurchaseReportById(@PathVariable int id) {
 		try {
@@ -123,23 +94,13 @@ public class CRUDController {
 		}
 	}
 
-	/**
-	 * Purchase Report put(update) request controller
-	 * 
-	 * @param pr
-	 * @return ResponseEntity<PurchaseReport> containing updated Purchase Report
-	 */
+	
 	@PutMapping("/admin/purchaseReport")
 	public ResponseEntity<PurchaseReport> updatePurchaseReport(@RequestBody PurchaseReport pr) {
 		return new ResponseEntity<>(service.updatePurchaseReport(pr), HttpStatus.OK);
 	}
 
-	/**
-	 * Purchase Report delete request controller
-	 * 
-	 * @param id
-	 * @return ResponseEntity<String> containing the status of delete request.
-	 */
+	
 	@DeleteMapping("/admin/purchaseReport/{id}")
 	public ResponseEntity<String> deletePurchaseReportById(@PathVariable int id) {
 		try {
