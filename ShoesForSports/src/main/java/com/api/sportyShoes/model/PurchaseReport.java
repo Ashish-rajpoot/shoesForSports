@@ -37,19 +37,68 @@ public class PurchaseReport {
 	
 	
 
-	public PurchaseReport() {
-		super();
-	}
-
-
-
 	public int getId() {
 		return id;
 	}
 
 
+
 	public void setId(int id) {
 		this.id = id;
+	}
+
+
+
+	public String getPurchasedBy() {
+		return purchasedBy;
+	}
+
+
+
+	public void setPurchasedBy(String purchasedBy) {
+		this.purchasedBy = purchasedBy;
+	}
+
+
+
+	public String getCategory() {
+		return category;
+	}
+
+
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+
+
+	public Date getDop() {
+		return dop;
+	}
+
+
+
+	public void setDop(Date dop) {
+		this.dop = dop;
+	}
+
+
+
+	public String getOrderList() {
+		return orderList;
+	}
+
+
+
+	public void setOrderList(String orderList) {
+		this.orderList = orderList;
+	}
+
+
+
+	public PurchaseReport() {
+		super();
 	}
 
 
