@@ -5,6 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import io.swagger.annotations.ApiModel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,6 +17,7 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @ToString
+@ApiModel(value ="User Bean")
 public class Shoe {
 	public Shoe(int id, String name, String category, double price) {
 		super();

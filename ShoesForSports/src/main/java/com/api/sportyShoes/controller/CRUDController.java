@@ -18,6 +18,8 @@ import com.api.sportyShoes.model.PurchaseReport;
 import com.api.sportyShoes.model.Shoe;
 import com.api.sportyShoes.service.SportyShoesService;
 
+import io.swagger.annotations.ApiModel;
+
 @RestController
 public class CRUDController {
 

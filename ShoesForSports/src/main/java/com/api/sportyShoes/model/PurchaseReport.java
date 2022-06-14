@@ -9,6 +9,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import io.swagger.annotations.ApiModel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -20,6 +21,7 @@ import lombok.ToString;
 @Getter
 @NoArgsConstructor
 @ToString
+@ApiModel(value ="Purchase Report Bean")
 public class PurchaseReport {
 	
 	
